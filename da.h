@@ -46,7 +46,7 @@ typedef struct {
 #define da_append_many(da, item, sz) \
     do { \
         da_reserve((da), (da)->count + sz); \
-        memcpy((da)->items + (da)->count, (item), sz); \
+        memcpy((da)->items + (da)->count, (item), (sz) * sizeof(*(da)->items)); \
         (da)->count += sz; \
      } while(0) 
 
