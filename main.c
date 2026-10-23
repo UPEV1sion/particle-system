@@ -12,7 +12,7 @@
 #define max(a, b) ((a) > (b) ? (a) : (b))
 #define min(a, b) ((a) < (b) ? (a) : (b))
 
-#define PART_COUNT (1 << 18)
+#define PART_COUNT (1 << 14)
 #define WIDTH  (800 * 2)
 #define HEIGHT (600 * 2)
 
